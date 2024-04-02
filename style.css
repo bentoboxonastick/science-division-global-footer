@@ -1,0 +1,26 @@
+.footer-wrap {
+    background: url(images/topo-bg.svg), linear-gradient(30deg, #003c6c, #006aad);
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    padding: 1em 0px;
+    width: 100%;
+}
+
+.footer-logo {
+    text-align: center;
+}
+
+.footer-logo img {
+    max-width: 250px;
+}
+
+.footer-links, .footer-links a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.inline div, .inline li {
+    display: inline-block;
+}
