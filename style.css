@@ -1,14 +1,24 @@
+body {
+    font-family: 'Roboto', Arial;
+}
+
 .footer-wrap {
     background: url(images/topo-bg.svg), linear-gradient(30deg, #003c6c, #006aad);
     background-position: top right;
     background-repeat: no-repeat;
     background-size: cover;
     color: #fff;
-    padding: 1em 0px;
+    padding: 1rem 1rem;
     width: 100%;
 }
 
+.footer-wrap.grid {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
 .footer-logo {
+    justify-self: start;
     text-align: center;
 }
 
@@ -16,11 +26,25 @@
     max-width: 250px;
 }
 
+.footer-links {
+    justify-self: end;
+}
+
+.footer-links ul {
+    display: inline-block;
+    list-style: none;
+}
+
 .footer-links, .footer-links a {
     color: #ffffff;
     text-decoration: none;
 }
 
-.inline div, .inline li {
+.inline div, .inline li, .grid div, .grid ul, .grid li {
     display: inline-block;
+}
+
+.inline li, .grid li {
+    margin: 0 0.8rem;
+    text-align: center;
 }
